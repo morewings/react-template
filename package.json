@@ -27,6 +27,7 @@
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
     "husky": "^0.14.3",
+    "lint-staged": "^4.0.2",
     "prettier": "^1.5.3"
   },
   "scripts": {
@@ -39,7 +40,13 @@
     "eject": "react-scripts eject",
     "fix": "eslint --fix ./src/",
     "lint": "eslint ./src/",
-    "precommit": "./pre-commit.sh && npm run lint",
+    "precommit": "lint-staged",
     "prepush": "CI=true npm run test"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
