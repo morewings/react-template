@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { sample } from 'Redux/actions/index';
 
-function mapStateToProps(state, props) {
+function mapStateToProps(state, ownProps) {
   return {
     increment: state.sample.increment,
   };

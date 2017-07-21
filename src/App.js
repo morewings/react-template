@@ -3,9 +3,10 @@ import * as React from 'react';
 // components
 import Sample from 'containers/Sample';
 
-const App = props =>
-  (<div className="App">
+const App = props => (
+  <div className="App">
     <Sample />
-  </div>);
+  </div>
+);
 
 export default App;
