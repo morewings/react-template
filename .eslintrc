@@ -15,7 +15,8 @@
       "jsxBracketSameLine": true,
       "parser": "flow"
     }],
-    "import/prefer-default-export": 0
+    "import/prefer-default-export": 0,
+    "no-confusing-arrow": "error"
   },
   "plugins": [
     "prettier"

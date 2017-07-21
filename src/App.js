@@ -1,5 +1,11 @@
 import * as React from 'react';
 
-const App = props => <div className="App">Hello</div>;
+// components
+import Sample from 'containers/Sample';
+
+const App = props =>
+  <div className="App">
+    <Sample />
+  </div>;
 
 export default App;

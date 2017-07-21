@@ -1,9 +1,13 @@
 import {SAMPLE} from 'Redux/constants';
 
-export default function(state = [], action) {
+const initialState = {
+  increment: 0
+};
+
+export default function(state = initialState, action) {
   switch (action.type) {
     case SAMPLE: {
-      return [action.payload.data, ...state];
+      return {...state, increment: state.increment + 1};
     }
     default: {
       return state;

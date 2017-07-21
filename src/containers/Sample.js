@@ -1,20 +1,18 @@
-import * as React from 'react';
+import Sample from 'components/Sample';
 
 // redux
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-// import {fetchUsers} from './../actions/index';
+import {sample} from 'Redux/actions/index';
 
-function mapStateToProps(state) {
+function mapStateToProps(state, props) {
   return {
-    followingUsers: state.users.followingUsers,
-    newUsers: state.users.newUsers,
-    hasMore: state.users.hasMore
+    increment: state.sample.increment
   };
 }
 
 function mapDispatchToProps(dispatch) {
-  // return bindActionCreators({fetchUsers}, dispatch);
+  return bindActionCreators({sample}, dispatch);
 }
 
-// export default connect(mapStateToProps, mapDispatchToProps)(UserList);
+export default connect(mapStateToProps, mapDispatchToProps)(Sample);
