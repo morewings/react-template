@@ -1,8 +1,8 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 import SampleReducer from 'Redux/reducers/SampleReducer';
 
 const rootReducer = combineReducers({
-  sample: SampleReducer
+  sample: SampleReducer,
 });
 
 export default rootReducer;

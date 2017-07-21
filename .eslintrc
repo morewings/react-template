@@ -1,26 +1,13 @@
 {
   "extends": [
     "airbnb",
-    "react-app",
-    "prettier",
-    "prettier/flowtype",
-    "prettier/react"
+    "react-app"
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "prettier/prettier": ["error", {
-      "singleQuote": true,
-      "trailingComma": "none",
-      "bracketSpacing": false,
-      "jsxBracketSameLine": true,
-      "parser": "flow"
-    }],
     "import/prefer-default-export": 0,
     "no-confusing-arrow": "error"
   },
-  "plugins": [
-    "prettier"
-  ],
   "settings": {
     "import/resolver": {
       "node": {

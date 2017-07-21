@@ -4,8 +4,8 @@ import * as React from 'react';
 import Sample from 'containers/Sample';
 
 const App = props =>
-  <div className="App">
+  (<div className="App">
     <Sample />
-  </div>;
+  </div>);
 
 export default App;
