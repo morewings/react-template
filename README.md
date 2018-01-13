@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/morewings/react-template.svg?branch=master)](https://travis-ci.org/morewings/react-template)
-![Dependencies](https://david-dm.org/morewings/react-template.svg)
+[![Dependencies](https://david-dm.org/morewings/react-template.svg)](https://david-dm.org/morewings/react-template)
 
 My custom tailored React App template. Based on [create-react-app](https://github.com/facebookincubator/create-react-app) with some additions.
 
