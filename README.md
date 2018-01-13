@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/morewings/react-template.svg?branch=master)](https://travis-ci.org/morewings/react-template)
+
 My custom tailored React App template. Based on [create-react-app](https://github.com/facebookincubator/create-react-app) with some additions.
 
 ## Quickstart
