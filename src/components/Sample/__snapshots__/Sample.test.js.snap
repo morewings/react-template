@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div>
+  <div>
+    Hello from sample component!
+  </div>
+  <button>
+    Click me
+  </button>
+  <div>
+    You clicked: 
+     times.
+  </div>
+</div>
+`;
