@@ -14,17 +14,6 @@
     "redux-promise-middleware": "^5.0.0",
     "redux-thunk": "^2.2.0"
   },
-  "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
-    "test": "npm run lint && react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "fix": "eslint --fix ./src/",
-    "lint": "eslint ./src/"
-  },
   "devDependencies": {
     "enzyme-to-json": "^3.3.0",
     "eslint": "^4.15.0",
@@ -34,8 +23,28 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
+    "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.2"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "npm run lint && react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "fix": "eslint --fix ./src/",
+    "lint": "eslint ./src/",
+    "precommit": "lint-staged",
+    "prepush": "CI=true npm run test"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
