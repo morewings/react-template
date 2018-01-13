@@ -6,7 +6,8 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "import/prefer-default-export": 0,
-    "no-confusing-arrow": "error"
+    "no-confusing-arrow": "error",
+    "object-curly-spacing": 0
   },
   "settings": {
     "import/resolver": {
