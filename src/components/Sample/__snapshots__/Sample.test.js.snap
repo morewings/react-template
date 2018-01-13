@@ -1,15 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
+exports[`src > components > Sample.js renders without crashing 1`] = `
 <div>
   <div>
     Hello from sample component!
   </div>
-  <button>
+  <button
+    onClick={[Function]}
+  >
     Click me
   </button>
   <div>
     You clicked: 
+    0
      times.
   </div>
 </div>
