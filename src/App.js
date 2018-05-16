@@ -1,7 +1,5 @@
-import * as React from 'react';
-
-// components
-import Sample from 'containers/Sample';
+import React from 'react';
+import Sample from 'components/Sample/Sample.container';
 
 const App = props => (
   <div className="App">

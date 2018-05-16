@@ -1,9 +1,14 @@
+[![Build Status](https://travis-ci.org/morewings/react-template.svg?branch=master)](https://travis-ci.org/morewings/react-template)
+[![Dependencies](https://david-dm.org/morewings/react-template.svg)](https://david-dm.org/morewings/react-template)
+
+My custom tailored React App template. Based on [create-react-app](https://github.com/facebookincubator/create-react-app) with some additions.
+
 ## Quickstart
 
 ### Prerequisites
 - Install [nvm](https://github.com/creationix/nvm);
-- Install latest LTS node release with `nvm install 6`;
-- Install [yarn](https://yarnpkg.com/en/) globally `npm install yarn -g`
+- Install latest LTS node release with `nvm install 8`;
+- Install [yarn](https://yarnpkg.com/en/) globally `brew install yarn`
 
 ### Initial setup
 

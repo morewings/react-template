@@ -1,4 +1,4 @@
-import Sample from 'components/Sample';
+import Sample from 'components/Sample/Sample';
 
 // redux
 import { connect } from 'react-redux';

@@ -6,7 +6,10 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "import/prefer-default-export": 0,
-    "no-confusing-arrow": "error"
+    "no-confusing-arrow": "error",
+    "object-curly-spacing": 0,
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
   },
   "settings": {
     "import/resolver": {
