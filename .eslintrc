@@ -1,18 +1,35 @@
 {
   "extends": [
     "airbnb",
-    "react-app"
+    "react-app",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react"
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/no-array-index-key": 1,
     "import/prefer-default-export": 0,
+    "import/no-unresolved": 0,
     "no-confusing-arrow": "error",
-    "object-curly-spacing": 0,
+    "object-curly-spacing": ["error", "never"],
+    "arrow-body-style": ["warn", "as-needed"],
+    "prettier/prettier": ["warn", "fb"],
+    "import/extensions": 0,
+    "fp/no-delete": 1,
+    "fp/no-let": "warn",
+    "fp/no-loops": 1,
+    "fp/no-mutating-assign": 1,
+    "fp/no-mutating-methods": 1,
+    "no-underscore-dangle": [2, { "allow": ["__"] }], // fix Ramda placeholder `R.__`
+    "no-shadow": 0,
     "jsx-a11y/href-no-hash": "off",
-    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
-    "react/jsx-closing-bracket-location": 0,
-    "react/no-unescaped-entities": 0
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
   },
+  "plugins": [
+    "prettier",
+    "fp"
+  ],
   "settings": {
     "import/resolver": {
       "node": {
@@ -24,4 +41,3 @@
     }
   }
 }
-
