@@ -5,14 +5,10 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {sample} from 'Redux/actions/index';
 
-function mapStateToProps(state, ownProps) {
-  return {
-    increment: state.sample.increment,
-  };
-}
+const mapStateToProps = (state, ownProps) => ({
+  increment: state.sample.increment,
+});
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({sample}, dispatch);
-}
+const mapDispatchToProps = dispatch => bindActionCreators({sample}, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Sample);
