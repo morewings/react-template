@@ -1,9 +1,9 @@
 import Sample from 'components/Sample/Sample';
 
 // redux
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { sample } from 'Redux/actions/index';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {sample} from 'Redux/actions/index';
 
 function mapStateToProps(state, ownProps) {
   return {
@@ -12,7 +12,7 @@ function mapStateToProps(state, ownProps) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ sample }, dispatch);
+  return bindActionCreators({sample}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Sample);
