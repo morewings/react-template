@@ -5,7 +5,7 @@ const Sample = props => (
   <div>
     <div>Hello from sample component!</div>
     <button type="button" onClick={props.sample}>
-      Click me
+      Click me!
     </button>
     <div>You clicked: {props.increment} times.</div>
   </div>
