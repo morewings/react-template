@@ -9,7 +9,7 @@ exports[`src > components > Sample.js renders without crashing 1`] = `
     onClick={[Function]}
     type="button"
   >
-    Click me
+    Click me!
   </button>
   <div>
     You clicked: 
