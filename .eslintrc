@@ -24,7 +24,8 @@
     "no-underscore-dangle": [2, { "allow": ["__"] }], // fix Ramda placeholder `R.__`
     "no-shadow": 0,
     "jsx-a11y/href-no-hash": "off",
-    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
+    "react/destructuring-assignment": ["warn", "never"]
   },
   "plugins": [
     "prettier",

@@ -11,4 +11,7 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = dispatch => bindActionCreators({sample}, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(Sample);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Sample);
