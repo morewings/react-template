@@ -1,9 +1,15 @@
 import React from 'react';
-import {shallow} from 'enzyme'; // TODO: use mount and store
+import {mount} from 'enzyme';
 import toJson from 'enzyme-to-json';
+import {Provider} from 'react-redux';
+import store from 'store';
 import App from 'App';
 
 it('renders without crashing', () => {
-  const wrapper = shallow(<App />);
+  const wrapper = mount(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
   expect(toJson(wrapper)).toMatchSnapshot();
 });
