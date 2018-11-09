@@ -5,7 +5,6 @@ cache:
     - node_modules
 
 before_script:
-- yarn build-css
 
 notifications:
   email: false
