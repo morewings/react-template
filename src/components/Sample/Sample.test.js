@@ -15,6 +15,7 @@ describe('src > components > Sample.js', () => {
   });
   it('renders without crashing', () => {
     const wrapper = shallow(<Sample {...defaultProps} />);
-    expect(toJson(wrapper)).not.toMatchSnapshot();
+    expect(3).toBe(2);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
