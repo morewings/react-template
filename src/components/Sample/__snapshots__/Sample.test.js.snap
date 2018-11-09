@@ -6,7 +6,7 @@ exports[`src > components > Sample.js renders without crashing 1`] = `
     Hello from sample component!
   </div>
   <button
-    onClick={[Function]}
+    onClick={[MockFunction]}
     type="button"
   >
     Click me!
