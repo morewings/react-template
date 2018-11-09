@@ -14,7 +14,7 @@
     "no-confusing-arrow": "error",
     "object-curly-spacing": ["error", "never"],
     "arrow-body-style": ["warn", "as-needed"],
-    "prettier/prettier": ["warn", "fb"],
+    "prettier/prettier": ["warn"],
     "import/extensions": 0,
     "fp/no-delete": 1,
     "fp/no-let": "warn",
