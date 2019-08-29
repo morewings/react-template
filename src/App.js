@@ -11,4 +11,6 @@ const App = props => (
   </div>
 );
 
+const alpha = {hello: 'hello'};
+
 export default App;
