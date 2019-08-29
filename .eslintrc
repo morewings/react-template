@@ -8,6 +8,7 @@
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-props-no-spreading": 1,
     "react/no-array-index-key": 1,
     "import/prefer-default-export": 0,
     "import/no-unresolved": 0,

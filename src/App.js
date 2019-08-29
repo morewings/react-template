@@ -11,6 +11,4 @@ const App = props => (
   </div>
 );
 
-const alpha = props => props;
-
 export default App;
