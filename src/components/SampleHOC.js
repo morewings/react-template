@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 const wrapHoc = options => WrappedComponent =>
   class Wrapper extends React.Component {
-    componentWillReceiveProps(nextProps) {
+    componentDidUpdate(prevProps) {
       console.log('Current props: ', this.props);
-      console.log('Next props: ', nextProps);
+      console.log('Prev props: ', prevProps);
     }
 
     render() {
