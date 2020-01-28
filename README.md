@@ -1,3 +1,7 @@
+## Deprecation notice
+
+This repo is deprecated. Use [Quickstart Redux template](https://github.com/morewings/cra-template-quickstart-redux) instead.
+
 [![Build Status](https://travis-ci.org/morewings/react-template.svg?branch=master)](https://travis-ci.org/morewings/react-template)
 [![Dependencies](https://david-dm.org/morewings/react-template.svg)](https://david-dm.org/morewings/react-template)
 
